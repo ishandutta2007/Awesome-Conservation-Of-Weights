@@ -123,3 +123,15 @@ To advance this conversation or documentation workspace, consider exploring thes
 * I can generate a **Markdown matrix table** tracking the explicit parameter scales, weight metrics, and target layers utilized by leading foundation repositories to manage distributed data clusters [INDEX: 15, 22].
 * I can write a detailed technical explanation focusing on the **mathematical proof of vector norm preservation** ($w = g \frac{v}{\|v\|_2}$) and how it impacts the geometry of loss landscapes during stochastic gradient descent.
 
+
+
+##  Star History
+<div align="center">
+<a href="https://www.star-history.com/?repos=ishandutta2007%2FAwesome-Conservation-Of-Weights&type=date&legend=bottom-right">
+<picture>
+<source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Conservation-Of-Weights&type=date&theme=dark&legend=bottom-right" />
+<source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Conservation-Of-Weights&type=date&legend=bottom-right" />
+<img alt="Star History Chart" src="https://api.star-history.com/chart?repos=ishandutta2007/Awesome-Conservation-Of-Weights&type=date&legend=bottom-right" />
+</picture>
+</a>
+</div>
