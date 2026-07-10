@@ -15,7 +15,10 @@ The technical framework governing parameter norm conservation has transitioned f
 
 
 ```mermaid
-[Analytical Variance Scaling (2010)] ───> [Weight Normalization (Salimans, 2016)] ───> [Continuous Orthogonal Matrices] ───> [Scale-Invariant DeepNorm (2022+)](Step-Zero Initialization Bounds)         (Decoupling Magnitude from Direction)          (Perfect Euclidean Length Conservation)       (Multi-Node Token Gradient Stabilization)
+flowchart LR
+    A["Analytical Variance Scaling (2010)<br>(Step-Zero Initialization Bounds)"] --> B["Weight Normalization (Salimans, 2016)<br>(Decoupling Magnitude from Direction)"]
+    B --> C["Continuous Orthogonal Matrices<br>(Perfect Euclidean Length Conservation)"]
+    C --> D["Scale-Invariant DeepNorm (2022+)<br>(Multi-Node Token Gradient Stabilization)"]
 ```
 
 
@@ -63,7 +66,13 @@ To maintain absolute parameter scale stability across distributed multi-node clu
 
 
 ```mermaid
-The DeepNorm Residual Conservation Pipeline[Identify Total Layers L] ───> [Calculate Base Weight Variance] ───> [Compute Depth Scale Factor: 1/√(2L)]│▼[Shard Parameters via FSDP] <── [Verify Vector Norm Isometry] <── [Apply Downscale Factor to Layer Weights]
+flowchart TB
+    %% The DeepNorm Residual Conservation Pipeline
+    A["Identify Total Layers L"] --> B["Calculate Base Weight Variance"]
+    B --> C["Compute Depth Scale Factor: 1/√(2L)"]
+    C --> D["Apply Downscale Factor to Layer Weights"]
+    D --> E["Verify Vector Norm Isometry"]
+    E --> F["Shard Parameters via FSDP"]
 ```
 
 
