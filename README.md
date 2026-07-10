@@ -1,7 +1,13 @@
 # 🚀 Awesome-Conservation-Of-Weights
 
+<!-- SEO Keywords: AI, Machine Learning, Deep Learning, Conservation of Weights, Weight Normalization, Orthogonal Initializers, DeepNorm, Foundation Models, Llama 3, DeepSeek-V3, Artificial Intelligence, Neural Networks -->
+
 <div align="center">
   <img src="assets/banner.svg" alt="Banner">
+</div>
+
+<div align="center">
+<a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
 </div>
 
 ## 🧠 Conservation of Weights in AI: History, Progression, Variants, & Applications
