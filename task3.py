@@ -1,0 +1,55 @@
+import os
+
+svg_content = """<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e3c72;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2a5298;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#grad)" rx="15" ry="15" />
+  
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="40" font-weight="bold" fill="#ffffff" filter="url(#glow)">
+    Awesome Conservation of Weights
+  </text>
+  <text x="50%" y="70%" dominant-baseline="middle" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#e0e0e0">
+    Stabilizing Gradient Propagation in Deep Networks
+  </text>
+  
+  <circle cx="100" cy="100" r="5" fill="#00ffcc">
+    <animate attributeName="r" values="5; 15; 5" dur="2s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="1; 0; 1" dur="2s" repeatCount="indefinite" />
+  </circle>
+  
+  <circle cx="700" cy="100" r="10" fill="#ff00cc">
+    <animate attributeName="r" values="10; 25; 10" dur="3s" repeatCount="indefinite" />
+    <animate attributeName="opacity" values="1; 0; 1" dur="3s" repeatCount="indefinite" />
+  </circle>
+</svg>"""
+
+os.makedirs('assets', exist_ok=True)
+with open('assets/banner.svg', 'w', encoding='utf-8') as f:
+    f.write(svg_content)
+
+with open('README.md', 'r', encoding='utf-8') as f:
+    content = f.read()
+
+# Emojis insertion
+content = content.replace('# Awesome-Conservation-Of-Weights', '# 🚀 Awesome-Conservation-Of-Weights\n\n<div align="center">\n  <img src="assets/banner.svg" alt="Banner">\n</div>\n')
+content = content.replace('## Conservation of Weights in AI:', '## 🧠 Conservation of Weights in AI:')
+content = content.replace('## 1. The Macro Chronological Evolution', '## 🕰️ 1. The Macro Chronological Evolution')
+content = content.replace('## 2. Core Functional & Algorithmic Variants', '## ⚙️ 2. Core Functional & Algorithmic Variants')
+content = content.replace('## 3. The Scale-Invariant Weight Conservation Matrix', '## 📐 3. The Scale-Invariant Weight Conservation Matrix')
+content = content.replace('## 4. Production Engineering Challenges & Hardening Mitigations', '## 🛡️ 4. Production Engineering Challenges & Hardening Mitigations')
+content = content.replace('## 5. Frontier Real-World AI Infrastructure Applications', '## 🌍 5. Frontier Real-World AI Infrastructure Applications')
+content = content.replace('## References', '## 📚 References')
+
+with open('README.md', 'w', encoding='utf-8') as f:
+    f.write(content)

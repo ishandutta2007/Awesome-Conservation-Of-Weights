@@ -1,5 +1,10 @@
-# Awesome-Conservation-Of-Weights
-## Conservation of Weights in AI: History, Progression, Variants, & Applications
+# 🚀 Awesome-Conservation-Of-Weights
+
+<div align="center">
+  <img src="assets/banner.svg" alt="Banner">
+</div>
+
+## 🧠 Conservation of Weights in AI: History, Progression, Variants, & Applications
 
 **Conservation of Weights**—formally generalized as parameter conservation, weight-norm preservation, or isometric gradient stabilization—is an advanced optimization, regularisation, and initialization paradigm in artificial intelligence. It enforces a strict mathematical invariant over the magnitude, norm, or total distribution scale of a neural network's learnable parameter matrices ($W$) during both the forward and backward optimization passes. 
 
@@ -9,7 +14,7 @@ The Conservation of Weights paradigm resolves this constraint. By hardwiring geo
 
 ---
 
-## 1. The Macro Chronological Evolution
+## 🕰️ 1. The Macro Chronological Evolution
 
 The technical framework governing parameter norm conservation has transitioned from analytical variance tracking to layer-wise parameter normalizations, continuous orthogonal matrix constraints, and modern scale-invariant residual initializers.
 
@@ -31,7 +36,7 @@ flowchart LR
 
 ---
 
-## 2. Core Functional & Algorithmic Variants
+## ⚙️ 2. Core Functional & Algorithmic Variants
 
 Weight Conservation methodologies are strictly categorized based on the exact geometric dimensions and algebraic constraints they impose over the weight tensors.
 
@@ -44,7 +49,7 @@ Weight Conservation methodologies are strictly categorized based on the exact ge
 
 ---
 
-## 3. The Scale-Invariant Weight Conservation Matrix
+## 📐 3. The Scale-Invariant Weight Conservation Matrix
 
 To maintain absolute parameter scale stability across distributed multi-node clusters, modern compilers compute and clip tensor norms directly within high-speed GPU registers [INDEX: 22].
 
@@ -68,7 +73,7 @@ flowchart TB
 
 ---
 
-## 4. Production Engineering Challenges & Hardening Mitigations
+## 🛡️ 4. Production Engineering Challenges & Hardening Mitigations
 
 Enforcing parameter norm conservation across large distributed post-training infrastructure setups introduces unique VRAM capacity caps and processing bottlenecks [INDEX: 22].
 
@@ -79,7 +84,7 @@ Enforcing parameter norm conservation across large distributed post-training inf
 
 ---
 
-## 5. Frontier Real-World AI Infrastructure Applications
+## 🌍 5. Frontier Real-World AI Infrastructure Applications
 
 | Application Area | Application Details | Year First Used | Paper Link |
 | --- | --- | --- | --- |
@@ -89,7 +94,7 @@ Enforcing parameter norm conservation across large distributed post-training inf
 
 ---
 
-## References
+## 📚 References
 1. Glorot, X., & Bengio, Y. (2010). Understanding the difficulty of training deep feedforward neural networks. *Proceedings of the Thirteenth International Conference on Artificial Intelligence and Statistics (AISTATS)*.
 2. He, K., et al. (2015). Delving deep into rectifiers: Surpassing human-level performance on ImageNet classification. *Proceedings of the IEEE International Conference on Computer Vision (ICCV)*.
 3. Salimans, T., & Kingma, D. P. (2016). Weight normalization: A simple reparameterization to accelerate training of deep neural networks. *Advances in Neural Information Processing Systems (NeurIPS)*.
